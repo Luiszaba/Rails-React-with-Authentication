@@ -7,7 +7,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     allow do 
         # change origin to domain of the production app. Will use Heroku
-        origins "http://localhost:3000"
+        origins "insert host domain here"
         resource "*", headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head], credentials: true
-end
+    end
 end
